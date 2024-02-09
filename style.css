@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+.container {
+    overflow-x: hidden;
+    width: 1100px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+ 
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: #9a62a1;
+}
+
+
+.profile-card {
+    box-shadow: 3px 7px 7px 6px #f782b7b2;
+    width: 30%;
+    height: 460px;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+}
+
+.image {
+    border-radius: 50%;
+    border: 1px solid  #ef233c;
+    width: 200px;
+    height: fit-content;
+}
+
+.image img {
+    box-shadow: 1px 0px 2px 1px #f72585;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.line{
+    border: 1px solid #f72585;
+    width: 152px;
+}
+#job-role{
+    margin-top: 3px;
+    font-size: 14px;
+    font-family: cursive;
+}
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.3rem;
+    padding: 0.3rem;
+}
+.social-icon a i{
+    font-size: 2rem;
+    transition: all ease 0.4s;
+}
+
+.fa-facebook:hover{
+color:rgb(0, 102, 255);
+}
+.fa-whatsapp:hover{
+    color: rgb(12, 206, 70);
+}
+.fa-instagram:hover{
+    color: rgb(232, 9, 240);
+}
+.fa-linkedin:hover{
+ color:rgb(2, 49, 121);
+}
+.fa-github:hover{
+    color:rgb(255, 145, 42)
+}
+button{
+    border: none;
+    border-radius: 4px;
+    color: black;
+    width: 200px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    background-color: #f72585;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+button:hover{
+    background-color: #d60362;
+}
+@media (max-width:425px) {
+    html{
+        font-size: 80.3%;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-card {
+        box-shadow: 2px 3px 4px 4px #3e2c418f;
+        width: 80%;
+        height: 500px;
+        padding: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(24, 24, 24);
+    }
+    
+}
